@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class DataReader {
 
-    final Scanner io = new Scanner ( System.in );
 
-    public int getInt() {
+    public int getInt(Scanner io) {
+
         int number;
         while (true) {
             try {
@@ -21,7 +21,9 @@ public class DataReader {
         return number;
     }
 
-    public void exit() {
+    public void exit(Scanner io) {
+
         io.close ( );
     }
+
 }
